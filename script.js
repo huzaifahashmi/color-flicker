@@ -20,11 +20,14 @@ let colors = [
 
 changeColor.addEventListener("click", function () {
   let randomColor = Math.trunc(Math.random() * colors.length);
+  let randomColor1 = Math.trunc(Math.random() * colors.length);
   document.body.style.backgroundColor = `${colors[randomColor]}`;
   currentBackground.textContent = colors[randomColor];
+  changeColor.style.backgroundColor = colors[randomColor1];
 });
 
 resetButton.addEventListener("click", function () {
   document.body.style.backgroundColor = "rgb(204, 222, 255)";
   currentBackground.textContent = "cornflowerblue";
+  changeColor.style.backgroundColor = "";
 });
