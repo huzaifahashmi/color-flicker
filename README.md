@@ -1,5 +1,3 @@
-# color-flicker
-
 # URL
 https://randcolor.netlify.app/
 
